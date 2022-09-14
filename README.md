@@ -32,7 +32,8 @@ As  result the python code was update to reflect this data as evidenced below.
     - Winning Percentage: 73.8%
 
 * Screenshot of text file output from code below for reference: 
-    - f
+    - ![Screen Shot 2022-09-13 at 8 57 48 PM](https://user-images.githubusercontent.com/111612130/190035084-ac5e18a5-af81-4a74-8797-7b3fc703c491.png)
+
 ## Election-Audit Summary 
 ***
 * This code successfully output the results for these counties in Colorado, but are applicable anywhere in the state mainly due to the following:
@@ -40,5 +41,26 @@ As  result the python code was update to reflect this data as evidenced below.
     - Similarly none of the county info is hard coded, so as long as the data contains a ballot id, candidate, and county and additional or different counties can be used. 
     - These two features are due to the fact that the code makes a list of counties and candidates based on the data itself and not on an input in the code itself, thus its dynamic to what the input of the code is. 
     -Example of the code as follows which shows the creation of the respective county and candidate lists which gets populated as the code loops through the data. The entire code is available in the GitHub repo if a more in depth look is needed. 
+            
+            
+            # Initialize a total vote counter.
+            total_votes = 0
 
-  
+            # Candidate Options and candidate votes.
+            candidate_options = []
+            candidate_votes = {}
+
+            # 1: Create a county list and county votes dictionary.
+
+            county_list=[]
+            county_votes={}
+
+            # Track the winning candidate, vote count and percentage
+            winning_candidate = ""
+            winning_count = 0
+            winning_percentage = 0
+
+            # 2: Track the largest county and county voter turnout.
+
+            largest_county = ""
+            winning_county_turnout = 0
